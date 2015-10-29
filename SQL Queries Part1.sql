@@ -34,7 +34,6 @@ Solution:
 /* Trades is my database where I have tables including clients, trades, salesreps, comments, net_promoter_scores*/
 USE Trades 
 GO
-
 WITH SalesRepData_CTE 
 AS 
 (
