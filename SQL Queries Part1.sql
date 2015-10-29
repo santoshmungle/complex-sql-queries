@@ -1,5 +1,5 @@
 /************************************************************************************************
-Title:			SQL Queries
+Title:			SQL Queries Part1
 Created by: Santosh Mungle  <santoshmungle@gmail.com>
 License:		CC BY 3.0
 
