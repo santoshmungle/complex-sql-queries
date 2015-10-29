@@ -1,4 +1,4 @@
-/**
+/************************************************************************************************
 Title:			SQL Queries
 Created by: Santosh Mungle  <santoshmungle@gmail.com>
 License:		CC BY 3.0
@@ -12,7 +12,7 @@ In this part, there are following 3 tables in the database:
     columns: salesrep_id (pk), first_name, last_name
  3) Table: clients
     columns: client_id (pk), name, assigned_salesrep_id, signup_datetime,   churn_datetime 
-*/
+************************************************************************************************/
 
 
 Query 1. How many trades were there in the month of September 2015?
