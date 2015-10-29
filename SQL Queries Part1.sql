@@ -1,19 +1,19 @@
-/************************************************************************************
+/**
 Title:			SQL Queries
- Created by: Santosh Mungle  <santoshmungle@gmail.com>
- License:		CC BY 3.0
-  
- Usage:
- These queries meant to give you an understanding of sql queries for analyzing 
- data in database.
- In this part, there are following 3 tables in the database:
+Created by: Santosh Mungle  <santoshmungle@gmail.com>
+License:		CC BY 3.0
+
+Usage:
+These queries meant to give you an understanding of sql queries for analyzing data in database.
+In this part, there are following 3 tables in the database:
  1) Table: trades
-   columns: trade_id (pk), client_id, trade_datetime, facevalue, revenue
+    columns: trade_id (pk), client_id, trade_datetime, facevalue, revenue
  2) Table: salesreps
-   columns: salesrep_id (pk), first_name, last_name
+    columns: salesrep_id (pk), first_name, last_name
  3) Table: clients
-   columns: client_id (pk), name, assigned_salesrep_id, signup_datetime,   churn_datetime 
- ********************************************************************************/
+    columns: client_id (pk), name, assigned_salesrep_id, signup_datetime,   churn_datetime 
+*/
+
 
 Query 1. How many trades were there in the month of September 2015?
 Solution: 
@@ -83,4 +83,3 @@ INNER JOIN trades
 ON clients.client_id=trades.client_id AND
 (clients.name LIKE '%Green%' OR clients.name LIKE '%Purple%')) AA) * 100 / 
 (SELECT SUM(facevalue) FROM trades) AS FractionOfFaceval
-
